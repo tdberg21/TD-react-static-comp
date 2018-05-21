@@ -7,15 +7,12 @@ const Stories = (props) => {
     <div className='Stories'>
       <div className='  stories-header'>
         <h3>{props.storiesTitle}</h3>
-        <a href='#'>See more</a>
+        <a href='https://www.youtube.com/watch?v=Ienv1rBZFyc'>See more</a>
       </div>
       <div className='stories-grid'>
         {
           props.stories.map( (story, index) => {
-            console.log(story);
-            // INSTEAD OF returning the div below, return a Story component
-            // Be sure to pass down the correct props!
-            return (<div>{story.title}</div>)
+            return (<Story story={story}/>);
           })
         }
       </div>
