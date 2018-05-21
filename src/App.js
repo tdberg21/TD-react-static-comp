@@ -43,7 +43,7 @@ const stories = [
 const App = () => {
   return (
     <div className='App'>
-      {/* add a Header component (already created) */}
+      {<Header> }
       {/* add a Banner component (already created) */}
       <Stories  storiesTitle="Today's Top Stories"
                 stories={stories} />
